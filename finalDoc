@@ -1,0 +1,17 @@
+Final Project-
+
+This final project is a synthesizer that incorperates p5.js and Tone.js as well as an arduino to allow a user to 
+create a multi-media performance.
+The synthesizer has multiple instruments and more can easily be implemented to the user's liking
+The arduino is used by passing serial input and output to and from the javascript to trigger responses from each other.
+When a note is played on the keyboard, the animation on the p5 sketch changes
+Playing notes on the synthesizer triggers a notes corresponding light on the arduino.
+The light remains lit until another note is played. 
+This pattern could easily be altered in the arduino code to the user's liking
+Mapping notes to pins is accomplished through 2 JSON files.
+The first maps a key to a note and the second a note to a pin.
+Current implementation has C4-C5 within the JSONS, but other octaves as well as more notes on more keys could be added.
+Potentiometers allow the user to adjust features of the audio output.
+Current implementation allows the user to adjust the distortion of the notes
+with a potentiometer, but this could be changed to modify a different effect
+More potentiometers could also be added to adjust multiple effects.
